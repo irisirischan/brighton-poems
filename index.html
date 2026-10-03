@@ -47,9 +47,25 @@
     white-space: pre-line;
   }
 
-  #p1 { background-image: url('https://loremflickr.com/1600/900/boston,charlesriver?lock=11'); background-color: #2b3a55; }
-  #p2 { background-image: url('https://loremflickr.com/1600/900/boston,neighborhood?lock=12'); background-color: #44355a; }
-  #p3 { background-image: url('https://loremflickr.com/1600/900/boston,autumn?lock=13'); background-color: #4a3b2a; }
+  #p1 { background-image: url('brighton-1.jpg'); background-color: #2b3a55; }
+  #p2 { background-image: url('brighton-2.jpg'); background-color: #44355a; }
+  #p3 { background-image: url('brighton-3.jpg'); background-color: #4a3b2a; }
+
+  #gallery {
+    min-height: auto;
+    padding: 60px 20px;
+    background: #111;
+    display: block;
+  }
+  #gallery h2 { text-align: center; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .grid img { width: 100%; height: 240px; object-fit: cover; border-radius: 8px; display: block; }
 </style>
 </head>
 <body>
@@ -81,6 +97,16 @@ Brighton wakes, and fills her coffee cup.</p>
 The pennants of a Saturday night game,
 Overhead the signal boxes curve —
 Brighton dreams, and Boston burns the same.</p>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Brighton, in Photos</h2>
+  <div class="grid">
+    <img src="brighton-1.jpg" alt="View of Brighton from St. Elizabeth's">
+    <img src="brighton-4.jpg" alt="WWII veterans memorial, Brighton Center">
+    <img src="brighton-5.jpg" alt="Brighton after snow">
+    <img src="brighton-6.jpg" alt="MBTA bus at Brighton Center">
   </div>
 </section>
 
