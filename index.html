@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brighton, Mass — Three Poems</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; color: #fff; }
+
+  section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+  }
+
+  .poem {
+    position: relative;
+    max-width: 700px;
+    padding: 40px 24px;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 2;
+    font-style: italic;
+    white-space: pre-line;
+  }
+
+  #p1 { background-image: url('https://loremflickr.com/1600/900/boston,charlesriver?lock=11'); background-color: #2b3a55; }
+  #p2 { background-image: url('https://loremflickr.com/1600/900/boston,neighborhood?lock=12'); background-color: #44355a; }
+  #p3 { background-image: url('https://loremflickr.com/1600/900/boston,autumn?lock=13'); background-color: #4a3b2a; }
+</style>
+</head>
+<body>
+
+<section id="p1">
+  <div class="poem">
+    <h2>The Charles at Dusk</h2>
+    <p>The river bends like a slow silver thought
+Through Brighton's quiet, tree-lined lane,
+And joggers pass where the light is caught
+In ripple-brown, and coming rain.</p>
+  </div>
+</section>
+
+<section id="p2">
+  <div class="poem">
+    <h2>Cambridge Street Mornings</h2>
+    <p>Coffee steam and bakery doors aglow,
+A triple-decker stairway climbing up,
+B-branch rumbling soft as winter snow —
+Brighton wakes, and fills her coffee cup.</p>
+  </div>
+</section>
+
+<section id="p3">
+  <div class="poem">
+    <h2>Allston Lights, Late Autumn</h2>
+    <p>Maple leaves keep gold on every curb,
+The pennants of a Saturday night game,
+Overhead the signal boxes curve —
+Brighton dreams, and Boston burns the same.</p>
+  </div>
+</section>
+
+</body>
+</html>
