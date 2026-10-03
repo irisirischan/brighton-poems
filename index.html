@@ -57,7 +57,15 @@
     background: #111;
     display: block;
   }
-  #gallery h2 { text-align: center; }
+  #gallery h2 { text-align: center; position: relative; }
+  #gallery .grid { position: relative; }
+  nav.top {
+    position: fixed;
+    top: 16px;
+    right: 24px;
+    z-index: 10;
+  }
+  nav.top a { color: #fff; text-decoration: none; font-style: italic; text-shadow: 0 1px 4px rgba(0,0,0,.8); }
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -69,6 +77,8 @@
 </style>
 </head>
 <body>
+
+<nav class="top"><a href="videos.html">Watch Brighton in Video →</a></nav>
 
 <section id="p1">
   <div class="poem">
@@ -108,6 +118,7 @@ Brighton dreams, and Boston burns the same.</p>
     <img src="brighton-5.jpg" alt="Brighton after snow">
     <img src="brighton-6.jpg" alt="MBTA bus at Brighton Center">
   </div>
+  <p style="text-align:center; margin-top:32px; position: relative;"><a href="videos.html" style="color:#bbb; font-style:italic; text-decoration:none;">Watch Brighton in Video →</a></p>
 </section>
 
 </body>
